@@ -8,13 +8,13 @@ public class ReverseString {
     		return null;
     	}
     	
-    	String output = "";
+    	StringBuilder output = new StringBuilder("");
     	//Takes each character from end to front and appends them to output one by one.
     	for(int i = input.length() - 1; i >= 0; i--) {
-    		output = output + input.charAt(i);
+    		output.append(input.charAt(i));
     	}
     	
-    	return output;
+    	return output.toString();
     	
     }
 }
